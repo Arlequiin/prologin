@@ -4,6 +4,9 @@ with open("sample-input.txt") as f:
         content[i]=(content[i].replace("\n",""))
     amount=0
     for element in content:
+      if len(element)>1000:
+        pass
+      else:
         lowercases=[]
         uppercases=[]
         digits=[]
