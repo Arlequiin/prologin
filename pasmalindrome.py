@@ -16,9 +16,10 @@ with open("sample-input.txt") as f:
                 if char!=' ':
                  lowercases.append(char)
         #if 0 not in [len(lowercases),len(uppercases),len(digits)]:
-        if lowercases[::-1]==lowercases and uppercases[::-1]==uppercases and digits[::-1]==digits:
+        if lowercases[::-1]==lowercases and uppercases[::-1]==uppercases and digits[::-1]==digits and len(element)!=1:
             #print(element)
             amount+=1
         else:
-            print(uppercases,lowercases,digits)
+            #print(uppercases,lowercases,digits)
+            pass
 print(amount)
